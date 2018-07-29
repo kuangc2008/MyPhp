@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+	
+	function get() {
+		var element = document.getElementById("intpu1");
+		var value = element.value;
+		var size = value.lastIndexOf(".");
+		alert(value.substr(size+1));
+	}
+</script>
+</head>
+
+<body>
+<input id="intpu1" type="file" />
+<input id="input2" type="button" value="获取后缀" onclick="get()"/>
+
+</body>
+</html>

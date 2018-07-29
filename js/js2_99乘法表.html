@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+	/*
+		1. 99乘法表。  talbe标签
+	*/
+	document.write("<table border='2' width='1000'>");
+	for (var i = 1; i <= 9; i++) {
+		
+		document.write("<tr>");
+		
+		for (var j= 1;  j <=i ; j++) {
+			document.write("<td align='center'>");
+			document.write(i + "*" +  j + "=" + (i*j));
+			document.write("</td>");
+		}
+		
+		document.write("</tr>");
+//		document.write("<br>");
+	}
+		document.write("</table>");
+	
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

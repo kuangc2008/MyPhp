@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+	
+	function a() {
+		var ele = document.getElementById("div1");
+		ele.style.background = "red";
+		ele.style.fontSize = "18px";
+		ele.style.color = 'yellow';
+		ele.style.border = '1px solid #0f0';
+	};
+	
+	function b() {
+		var ele = document.getElementById("div1");
+		ele.style.fontSize = "14px";
+		ele.style.background = "#00000000";
+		ele.style.color = '#000';
+		ele.style.border = '';
+	}
+	
+	function c() {
+		var ele = document.getElementById("img");
+		ele.style.border = '1px solid #f00';
+		if (ele.width == 0) {
+			ele.width = ele.naturalWidth * 1.2;
+		} else {
+			ele.width *= 1.2;
+		}
+
+	}
+	
+</script>
+
+</head>
+
+<body>
+
+<div id="div1" onMouseOver="a()" onMouseOut="b()">
+	离离原上草，一岁一枯荣
+</div>
+
+<div id="div2">
+	<img src="../01.3css/首字母变大.png" id="img"/>
+	<input type="button" onClick="c()" value="变大" />
+</div>
+
+</body>
+</html>
